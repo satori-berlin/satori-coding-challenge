@@ -3,9 +3,9 @@ Here's a coding challenge for you focused on blocking fraudulent transactions in
 
 Let's say you're working on a payment system that is experiencing an influx of fraud. To combat this, we need to implement a new feature that allows our anti-fraud team to manage reported transactions.
 
-Your task is to develop a web-based UI that enables the anti-fraud team to block reported transactions and resolve tickets. You can use the provided wireframe as a guide and the example listing response (`data/reports.json`) as a basis for your listing, but please ignore the "Details" link.
+Your task is to develop a web-based UI that enables the anti-fraud team to block reported transactions and resolve tickets. You can use the provided wireframe as a guide and the example listing response (`data/transactions.json`) as a basis for your listing, but please ignore the "Details" link.
 
-The two buttons in the UI should make calls to your backend service to either block the transaction or resolve the ticket. The blocking implementation is up to you, but resolving should be defined as a `PUT` request to an endpoint with the structure `/reports/:reportId`. An example request for updating a report is included in (`data/update_ticket_request.json`).
+The two buttons in the UI should make calls to your backend service to either block the transaction or resolve the ticket. The blocking implementation is up to you, but resolving should be defined as a `PUT` request to an endpoint with the structure `/transactions/:transactionID`. An example request for updating a report is included in (`data/update_transaction.json`).
 
 - `Block`: Denotes that the transaction should be denied and blocked as fraduleny.
 - `Resolve`: Denotes that the transaction has been "resolved" and is no longer visible to the anti-fraud team.
