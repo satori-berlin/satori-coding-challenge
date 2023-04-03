@@ -7,7 +7,7 @@ Your task is to develop a web-based UI that enables the anti-fraud team to block
 
 The two buttons in the UI should make calls to your backend service to either block the transaction or resolve the ticket. The blocking implementation is up to you, but resolving should be defined as a `PUT` request to an endpoint with the structure `/transactions/:transactionID`. An example request for updating a report is included in (`data/update_transaction.json`).
 
-- `Block`: Denotes that the transaction should be denied and blocked as fraduleny.
+- `Block`: Denotes that the transaction should be denied and blocked as fradulent.
 - `Resolve`: Denotes that the transaction has been "resolved" and is no longer visible to the anti-fraud team.
 
 ### Guidelines

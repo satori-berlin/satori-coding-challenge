@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './css/App.css';
+// import './scss/App.scss';
 import TrsCard from "./components/TrsCard";
 
 class App extends Component {
